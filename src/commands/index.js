@@ -1,14 +1,14 @@
 import { InteractionResponseType } from 'discord-interactions';
 import { registerCommand } from './register.js';
 import { whoisCommand } from './whois.js';
-import { needcarryCommand } from './needcarry.js';
-import { guildlistCommand } from './guildlist.js';
+// import { needcarryCommand } from './needcarry.js';
+// import { guildlistCommand } from './guildlist.js';
 
 const commands = {
   'register': registerCommand,
   'whois': whoisCommand,
-  'needcarry': needcarryCommand,
-  'guildlist': guildlistCommand
+  // 'needcarry': needcarryCommand,
+  // 'guildlist': guildlistCommand
 };
 
 export async function handleCommand(interaction, env) {

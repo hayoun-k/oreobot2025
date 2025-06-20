@@ -7,8 +7,8 @@ import { whoisCommand } from './whois.js';
 const commands = {
   'register': registerCommand,
   'whois': whoisCommand,
-  // 'needcarry': needcarryCommand,
-  // 'guildlist': guildlistCommand
+  'needcarry': needcarryCommand,
+  'guildlist': guildlistCommand
 };
 
 export async function handleCommand(interaction, env) {

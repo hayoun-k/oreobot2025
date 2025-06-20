@@ -15,7 +15,8 @@
   ],
   "vars": {
     "DISCORD_PUBLIC_KEY": "848c13c1455690a8e0f8bdc27b5344beab6b839498174b9789eaa3d49391b60d",
-    "BOSS_REMINDER_WEBHOOK": "https://discord.com/api/webhooks/1385050501795545201/u3w9MVHuR7KcGMJDoTmGTKkVXT_dM7rNSuhofcaguh2sFZmHsf1RAh0VsqsnDRxdSk19"
+    "BOSS_REMINDER_WEBHOOK": "https://discord.com/api/webhooks/1385050501795545201/u3w9MVHuR7KcGMJDoTmGTKkVXT_dM7rNSuhofcaguh2sFZmHsf1RAh0VsqsnDRxdSk19",
+		"CARRY_CHANNEL_WEBHOOK": "https://discord.com/api/webhooks/1385736585819066529/YJ_qOWRZTLVzdUpGRk4GY5KsYhTULlyP4NLJdj0WkDyd-49vTZTZyJiE6kTo5Nn7Fh4N",
   },
   "triggers": {
     "crons": ["0 0 * * 4"]

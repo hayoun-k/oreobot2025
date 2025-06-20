@@ -15,7 +15,7 @@ export async function registerCommand(interaction, env) {
   }
 
   // Check if user is already registered
-  const existingData = await getMemberData(env.GUILD_KV, userId);
+  const existingData = await getMemberData(env.MEMBERS_KV, userId);
   
   const memberData = {
     ign: ign,
@@ -25,7 +25,7 @@ export async function registerCommand(interaction, env) {
     updatedAt: new Date().toISOString()
   };
 
-  await setMemberData(env.GUILD_KV, userId, memberData);
+  await setMemberData(env.MEMBERS_KV, userId, memberData);
 
   const action = existingData ? 'updated' : 'registered';
   return createResponse(`✅ Successfully ${action} your IGN as **${ign}**!`);

@@ -8,7 +8,7 @@ export async function whoisCommand(interaction, env) {
     return createResponse('Please specify a user to look up!', true);
   }
 
-  const memberData = await getMemberData(env.GUILD_KV, targetUser);
+  const memberData = await getMemberData(env.MEMBERS_KV, targetUser);
   
   if (!memberData) {
     return createResponse('User not found in guild directory!', true);

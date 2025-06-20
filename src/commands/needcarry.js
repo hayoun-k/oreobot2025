@@ -12,7 +12,7 @@ export async function needcarryCommand(interaction, env) {
   }
 
   // Check if user is registered
-  const memberData = await getMemberData(env.GUILD_KV, userId);
+  const memberData = await getMemberData(env.MEMBERS_KV, userId);
   if (!memberData) {
     return createResponse('Please register your IGN first using `/register [your_ign]`!', true);
   }

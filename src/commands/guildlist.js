@@ -3,7 +3,7 @@ import { getAllMembers } from '../utils/storage.js';
 
 export async function guildlistCommand(interaction, env) {
   try {
-    const members = await getAllMembers(env.GUILD_KV);
+    const members = await getAllMembers(env.MEMBERS_KV);
     
     if (members.length === 0) {
       return createResponse('No guild members registered yet! Use `/register [ign]` to be the first!');

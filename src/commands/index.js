@@ -38,3 +38,16 @@ export function createResponse(content, ephemeral = false) {
     headers: { 'Content-Type': 'application/json' }
   });
 }
+
+// New embed response function
+export function createEmbedResponse(embed, ephemeral = false) {
+  return new Response(JSON.stringify({
+    type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+    data: {
+      embeds: [embed],
+      flags: ephemeral ? 64 : 0
+    }
+  }), {
+    headers: { 'Content-Type': 'application/json' }
+  });
+}
